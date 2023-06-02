@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{f5ee7310-afdc-40c9-aeb3-aaaebcf05ac0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Driver">
+      <UniqueIdentifier>{bb1a58fe-7640-4fdb-bc2e-7c1022d96630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FagBytes">
+      <UniqueIdentifier>{34995fc1-d91b-4e5a-ad20-b75a24668506}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx9.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="KdMapper\utils.cpp" />
+    <ClCompile Include="KdMapper\service.cpp" />
+    <ClCompile Include="KdMapper\portable_executable.cpp" />
+    <ClCompile Include="KdMapper\main.cpp" />
+    <ClCompile Include="KdMapper\intel_driver.cpp" />
+    <ClCompile Include="KdMapper\kdmapper.cpp" />
+    <ClCompile Include="Protection\md5.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Overlay\overlay.h" />
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx9.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Offsets\offset.h" />
+    <ClInclude Include="Hacks\singleton.h" />
+    <ClInclude Include="Hacks\cfg.h" />
+    <ClInclude Include="Hacks\function.h" />
+    <ClInclude Include="Hacks\vector.h" />
+    <ClInclude Include="Driver\driver_utils.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\driver.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\bytes.h">
+      <Filter>FagBytes</Filter>
+    </ClInclude>
+    <ClInclude Include="KdMapper\utils.hpp" />
+    <ClInclude Include="KdMapper\service.hpp" />
+    <ClInclude Include="KdMapper\portable_executable.hpp" />
+    <ClInclude Include="KdMapper\nt.hpp" />
+    <ClInclude Include="KdMapper\kdmapper.hpp" />
+    <ClInclude Include="KdMapper\intel_driver.hpp" />
+    <ClInclude Include="KdMapper\driver.h" />
+    <ClInclude Include="KdMapper\intel_driver_resource.hpp" />
+    <ClInclude Include="Protection\anti_dbg.h" />
+    <ClInclude Include="Protection\anti_dump.h" />
+    <ClInclude Include="Protection\keygen64.h" />
+    <ClInclude Include="Protection\lazy.h" />
+    <ClInclude Include="Protection\obsidium.h" />
+    <ClInclude Include="Protection\obsidium64.h" />
+    <ClInclude Include="Protection\xor.h" />
+    <ClInclude Include="Protection\md5.h" />
+    <ClInclude Include="Protection\integ.h" />
+    <ClInclude Include="Protection\debuggers.h" />
+    <ClInclude Include="Auth\auth.hpp" />
+    <ClInclude Include="Auth\json.hpp" />
+    <ClInclude Include="Auth\utils.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Protection\obsidium64.def" />
+    <None Include="Protection\keygen64.dll" />
+    <None Include="Protection\obsidium64.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Protection\keygen64.lib" />
+    <Library Include="Protection\obsidium64.a" />
+    <Library Include="Protection\obsidium64.lib" />
+    <Library Include="Auth\libcurl.lib" />
+    <Library Include="Auth\library_x64.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="Protection\obsidiumlib.obj" />
+  </ItemGroup>
+</Project>
